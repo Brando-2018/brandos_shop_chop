@@ -89,7 +89,7 @@ router.post('/', (req, res) => {
 });
 
 // update product
-router.post('/:id', (req, res) => {
+router.put('/:id', (req, res) => {
   // update product data
   Product.update(req.body, {
     where: {
